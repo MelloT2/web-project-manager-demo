@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="addcard.css">
+    <link rel="stylesheet" href="main.css">
+    <title>เพิ่มงาน</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="addcard.css">
+    <title>เพิ่มงาน</title>
+</head>
+<body>
+    <div class="navigation">
+        <a class="back-to-dashboard" href="/Dashboard"><h1>บอร์ด</h1></a>
+        <p class="card-title"><h2>/ เพิ่มงาน</h2></p>
+    </div>
+    
+    <div class="task-form-box">
+        <form action="/dashboard/add" method="POST" class="task-form">
+            <h1>เพิ่มงาน</h1>
+            <!-- <div class="add-task-title">เพิ่มงาน</div> -->
+
+            <input type="text" placeholder="ชื่องาน" value="" name="title" id="title">
+            <textarea class="detail-task" placeholder="รายละเอียดงาน" name="body" id="body" cols="30" rows="10"></textarea>
+            <input type="text" placeholder="ผู้รับผิดชอบ" value="" name="responsiblePerson" id="responsiblePerson">
+            <input type="date" placeholder="กำหนดส่ง" value="" name="deadline" id="deadline">
+            <select class="dropdown-status" name="" id="">
+                <option value="">ดำเนินการ</option>
+                <option value="">เสร็จ</option>
+                <option value="">ติดปัญหา</option>
+            </select>
+            <button type="submit">+ เพิ่ม</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
+</body>
+</html>

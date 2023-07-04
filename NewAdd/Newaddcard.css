@@ -1,0 +1,79 @@
+.task-form {
+    position: relative;
+    top: 50px;
+    left: 450px;
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+
+    background: rgba(153,77,216,255);
+    box-shadow: 0px 0px 8px #535874;
+}
+
+.add-task-title {
+    position: relative;
+    bottom: 10px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.task-form input {
+    width: 70%;
+    padding: 6px;
+
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+}
+
+.detail-task {
+    margin-top: 10px;
+    width: 250px;
+    height: 100px;
+    background: #8b3cca;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    fill-opacity: 10%;
+}
+
+.task-form button {
+    margin-top: 10px;
+    padding: 4px 24px 4px 24px;
+    border: none;
+    border-radius: 2px;
+    background: #ffb218;
+    /* box-shadow: 1px 1px 3px #fff3d9; */
+    cursor: pointer;
+}
+
+.dropdown-status {
+    margin-top: 5px;
+    width: 240px;
+    height: 25px;
+    background-color: #8b3cca;
+    display: flex;
+    text-align: center;
+    
+}
+
+
+/* 
+//////////
+TRANSITION
+//////////
+*/
+/* .new-task:hover {
+    background-color: #ffc140;
+    transition: 0.2s;
+} */
+
+.task-form button:hover {
+        background-color: #cc9a33;
+        transition: 0.2s;
+}

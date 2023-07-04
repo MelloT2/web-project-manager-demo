@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+.navigation h1:hover {
+    color: rgb(19, 19, 19);
+    text-shadow: -5px 1px 6px rgb(160, 160, 160);
+    transition: 0.2s;
+}
+
+.card-title {
+    padding-left: 10px;
+}
+
+.dl-btn {
+    margin-left: 650px;
+    padding: 4px 36px 4px 36px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(217, 3, 3);
+    font-size: 18px;
+    cursor: pointer;
+}
+.dl-btn:hover {
+    background: rgb(255, 0, 0);
+    transition: 0.4s;
+}

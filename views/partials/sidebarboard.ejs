@@ -1,0 +1,23 @@
+<div class="board-sidebar">
+    <nav class="mainside-menu">
+      <header>
+        <div class="image-text">
+          <span class="image"></span>
+          <img src="" alt="">
+        </div>
+      </header>
+      <div class="sidebar-boardlist">
+        <ul class="menu-board">
+
+          <% if(boards.length > 0) { for(var i=0; i < boards.length; i++) { %>
+              <li class="board-link">
+                <a href="/dashboard/board/<%= boards[i]._id %>">
+                  <%= boards[i].board_title %>
+                </a>
+              </li>
+            <% } %>
+          <% } %>
+        </ul>
+      </div>
+    </nav>
+  </div>

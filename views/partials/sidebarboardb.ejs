@@ -1,0 +1,27 @@
+<div class="board-sidebar">
+  <nav class="mainside-menu">
+    <header>
+      <div class="image-text">
+        <span class="image"></span>
+        <img src="" alt="">
+      </div>
+    </header>
+    <div class="sidebar-boardlist">
+      <ul class="menu-board">
+        <% if (boardsSide.length > 0) { %>
+          <% boardsSide.forEach(function(boards) { %>
+            <li class="board-link">
+              <a href="/dashboard/board/<%= boards._id %>">
+                <%= boards.board_title %>
+              </a>
+            </li>
+          <% }); %>
+        <% } else { %>
+          <div>
+            <h1>ว่างเปล่า</h1>
+          </div>
+        <% } %>
+      </ul>
+    </div>
+  </nav>
+</div>

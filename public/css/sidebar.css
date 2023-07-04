@@ -1,0 +1,83 @@
+
+
+
+
+:root{
+    /* color */
+    --sidebar-color:#8F51D1 ;
+    --light-color: #f7e3e3;
+    --main-color: #6424A9;;
+   
+
+
+    /* transition */
+    --tran-03:all 0.3s ease ;
+    --tran-04:all 0.4s ease ;
+    --tran-05:all 0.5s ease ;
+    
+}
+
+.board-sidebar {
+    width: 30px;
+    float: left;
+    height: 90vh;
+    
+}
+
+.mainside-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background: var(--sidebar-color);
+    border-radius: 0px 10px 10px 0px;
+    border-top: 4.2px solid var(--main-color) ;
+    border-right: 4.2px solid  var(--main-color);
+}
+.mainside-menu .image-text img{
+    width: 20ox;
+    border-radius: 6px;
+    display: flex;
+   
+
+}
+.mainside-menu .image{
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-boardlist li{
+    list-style: none;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    background: var(--main-color);
+    width: 60%;
+    height: 48px;
+    border-radius: 10px;
+    
+}
+.menu-board .board-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board-link a{
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+}
+.add-board img{
+    display: flex;
+    justify-content: center;
+  margin-left: 2.5px; /* centers the image horizontally */
+  margin-right: 5px; /* centers the image horizontally */
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+}

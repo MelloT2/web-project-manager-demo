@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/newlogin.css">
+    <!-- <link rel="stylesheet" href="/css/login.css"> -->
+    <title></title>
+</head>
+    <body>
+    
+         <!-- Login -->
+ <!-- Login -->
+<div class="login_form_container">
+    <div class="login_form">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input type="text" name="displayName" placeholder="Username" class="input_text" autocomplete="off" required>
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input type="password" name="password" placeholder="Password" class="input_text" autocomplete="off" required>
+        </div>
+        <div class="button_group" id="login_button">
+          <button type="submit">ล็อคอิน</button>
+        </div>
+      </form>
+      <div class="or-text">
+        หรือ
+      </div>
+      <div class="button_group" id="logingoogle_button">
+        <a href="/auth/google">ลงชื่อเข้าใช้ด้วย Google</a>
+      </div>
+      <div class="fotter">
+        <a>ลืมรหัสผ่าน ?</a>
+        <a class="btn-to-register" id="btn-to-register">ลงทะเบียน</a>
+      </div>     
+    </div>
+  </div>
+  
+<!-- register -->
+<div class="register-box" id="register-box">
+    <button class="register-close-btn" id="register-close-btn">x</button>
+    <div class="register-text">สมัครสมาชิก</div>
+    
+    <form action="/" class="register-form" method="POST">
+      <div class="input_register">
+        <i class="fa fa-user"></i>
+        <input type="text" name="displayName" placeholder="ชื่อผู้ใช้" class="input_text" autocomplete="off" required>
+      </div>
+      <div class="input_register">
+        <i class="fa fa-unlock-alt"></i>
+        <input type="password" name="password" placeholder="รหัสผ่าน" class="input_text" autocomplete="off" required>
+      </div>
+      <div class="input_register">
+        <i class="fa fa-envelope" style="color: #000000;"></i>
+        <input type="email" name="email" placeholder="Email" class="input_text" autocomplete="off" required>
+      </div>
+      <button class="register-btn" type="submit">ยืนยัน</button>
+    </form>
+  </div>
+
+  <script>
+    
+    const register_box = document.getElementById('register-box')
+    const register_close_btn = document.getElementById('register-close-btn')
+    const btn_to_register = document.getElementById('btn-to-register')
+    
+    //Close
+    function registerClosebtn() {
+      register_box.style.display = "none"
+    }
+    //Open
+    function registerOpenbtn() {
+      register_box.style.display = "block"
+    }
+    
+    register_close_btn.addEventListener("click", registerClosebtn)
+    btn_to_register.addEventListener("click", registerOpenbtn)
+
+  </script>
+                
+    </body>
+</html>

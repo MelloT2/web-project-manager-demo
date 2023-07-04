@@ -1,24 +1,6 @@
-<div class="card">
-                <div class="top-section">
-                    <a class="card-title" href="/dashboard/item/<%= cards[i]._id %>"><%= cards[i].title %></a>
-                    <div class="icon-box">
-                        <img class="chat-icon" src="./access/icon/icons8-chat-room-30 (1).png" alt="">
-                    </div>
-                </div>
-                <div class="middle-section">
-                    <div class="person">
-                        <div class="person-title">ผู้รับผิดชอบ:</div>
-                        <div class="person-icon">
-                            <%= cards[i].responsiblePerson %>
-                        </div>
-                    </div>
-                    <div class="dead-line">
-                        <div class="dead-line-title">กำหนดส่ง:</div>
-                        <div class="date-calender"><%= cards[i].deadline %></div>
-                    </div>
-                    <div class="status">
-                        <div class="status-tile">สถานะ:</div>
-                        <div class="status-now"><%= cards[i].workstatus %></div>
-                    </div>
-                </div>
-            </div>
+GOOGLE_CLIENT_ID=774042954187-im0mc5ssstvp6eeop376u9h8sklo4uin.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+http://localhost:3000/google/callback
+
+Client_id=415517869333-c1dtbauv8git9ilgdea9u36fo4jtkk6o.apps.googleusercontent.com
+Client-secret=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

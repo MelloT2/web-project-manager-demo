@@ -1,0 +1,100 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<div class="navbar">
+    <div class="all-menu">
+        <div class="left-menu">
+            <a class="add-new-board" href="#">เพิ่มบอร์ด</a>
+            <form class="add-new-board-form" action="/dashboard/add-board" method="POST">
+                <button type="submit" class="open-btn-newboard">เพิ่ม</button>
+                <input type="text" placeholder="ชื่อบอร์ด" value="" name="board_title" id="board_title">
+                <button type="button" class="close-btn-newboard">X</button>
+            </form>
+
+            <a class="new-task" href="/dashboard/add">เพิ่มงาน</a>
+            <nav class="pages">
+                <ul class="each-page">
+                    <li>
+                        <a href="/dashboard">โฮมเพจ</a>
+                    </li>
+                    <li>
+                        <a href="/timeline">เวลา</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-menu01">
+            <div class="action2">
+                <div class="profile2" onclick="menuToggle2();">
+                    <img src="icons/people.png" alt="">
+                </div>
+                <div class="menu2">
+                    <h3>
+                        เพื่อนร่วมทีม
+                    </h3>
+                    <ul>
+                        <li class="invicelink"> 
+                            <span class="material-icons icons-size">person_add</span>
+                            <a class="share-textlink" href="#">เชิญ</a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="action">
+                <div class="profile" onclick="menuToggle();">
+                    <img src="icons/user.png" alt="">
+                </div>
+                <div class="menu">
+                    <h3>
+                        ชื่อผู้ใช้
+                        <div>
+                            <p><%= userName ? userName : userName02 %></p>
+                        </div>
+                    </h3>
+                </div>
+            </div> 
+            <div class="logout">
+                <a href="/logout" class="logout-btn">ออกจากระบบ</a>
+            </div>
+        </div>
+    </div>
+  
+</div>
+
+
+
+<script>
+
+    // Profile Code Zone
+
+      function menuToggle() {
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active');
+        const toggleMenu2 = document.querySelector('.menu2');
+        toggleMenu2.classList.remove('active2');
+    }
+    function menuToggle2() {
+        const toggleMenu2 = document.querySelector('.menu2');
+        toggleMenu2.classList.toggle('active2');
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.remove('active');
+    }
+    
+    // Add Board Code Zone
+    
+        const newboardForm = document.querySelector(".add-new-board-form");
+        const btnNewboard_open = document.querySelector(".add-new-board");
+        const btnNewboard_close = document.querySelector(".close-btn-newboard");
+        // Open add new board form
+        function openAddboardform() {
+            newboardForm.classList.add("active-addboard");
+        }
+        // Close add new board form
+        function closeAddboardform() {
+            newboardForm.classList.remove("active-addboard");
+        }
+
+        btnNewboard_open.addEventListener("click", openAddboardform);
+        btnNewboard_close.addEventListener("click", closeAddboardform);
+
+</script>

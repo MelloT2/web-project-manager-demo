@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/dashboardHeader.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <!-- <link rel="stylesheet" href="/css/task-sidebar.css"> -->
+</head>
+<body>
+    
+        <!-- เงื่อนไขของ BOARD เอาแค่ board แรกพอ -->
+       
+            <h1 class="board-title">บอร์ด</h1>
+   
+        <!-- เงื่อนไขของ BOARD  -->
+    
+    
+    <div class="board">
+        <div class="detail-main">
+            <!-- <div class="project-title-box">
+                <div class="project-title">Web Developer</div>
+            </div> -->
+            <div class="detail-box">
+                <!-- <div class="d-date">
+                    <div class="date"><input type="date"></div>
+                </div>
+                <div class="m-month">
+                    <div onmouseover="onMonthdropdown()" class="show-month">สัปดาห์นี้</div>
+        
+                    <ul class="month-dropdown">
+                        <li class="month-list" id="7">สัปดาห์นี้</li>
+                        <li class="month-list" id="31">เดือนนี้</li>
+                    </ul>
+                </div> -->
+                <form class="s-search" method="POST" action="/dashboard/search">
+                    <input class="search-box" type="search" name="searchTerm" placeholder="ค้นหา">
+                </form>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <% if(cards.length > 0) { for(var i=0; i < cards.length; i++) { %>
+            <div class="card">
+                <div class="top-section">
+                    <a class="card-title" href="/dashboard/item/<%= cards[i]._id %>"><%= cards[i].title %></a>
+                    <div class="icon-box">
+                        <a href="/chat/room/<%= cards[i]._id %>">แชท</a>
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <div class="person">
+                        <div class="person-title">ผู้รับผิดชอบ:</div>
+                        <div class="person-icon">
+                            <%= cards[i].responsiblePerson %>
+                        </div>
+                    </div>
+                    <div class="dead-line">
+                        <div class="dead-line-title">กำหนดส่ง:</div>
+                        <div class="date-calender"><%= cards[i].deadline %></div>
+                    </div>
+                    <div class="status">
+                        <div class="status-tile">สถานะ:</div>
+                        <div class="status-now"><%= cards[i].workstatus %></div>
+                    </div>
+                </div>
+            </div>
+            <% }} else { %>
+                <div>
+                    <h1>ว่างเปล่า</h1>
+                </div>
+            <% } %>
+        </div>
+    </div>
+             
+                
+    
+</body>
+</html>
+
+

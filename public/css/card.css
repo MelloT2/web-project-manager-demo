@@ -1,0 +1,208 @@
+.board-title {
+    position: absolute;
+    top: 105px;
+    left: 110px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    row-gap: 10px;
+    column-gap: 40px;
+    padding-left: 60px;
+
+}
+
+
+/* CARD DETAIL */
+.card {
+    background: #FFFF99;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #323749;
+    height: 180px;
+   
+}
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 18px;
+}
+.card-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #292937
+  
+}
+.icon-box {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.icon-box a{
+    color: #292937
+}
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.person-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 90px;
+    
+}
+.person-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    background: #8f51d1ad;
+    text-align: center;
+    /* padding: 15px 4px 15px 4px; */
+    border-radius: 4px;
+   
+}
+.person-img {
+    width: 22px;
+    border-radius: 50%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.dead-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding-top: 15px;
+}
+.dead-line-title {
+    width: 85px;
+    padding-left: 9px;
+}
+.dead-line-now {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+}
+
+.date-calender {
+    text-align: center;
+    background: #8f51d1ad;
+    width: 155px;
+}
+
+/* STATUS : DROPDOWN */
+.status {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    /* margin-left: 10px; */
+    margin-top: 15px;
+    padding-left: 55px;
+}
+
+.status-now {
+
+    color: #FEFBE4;
+    width: 120px;
+    background: #8f51d1ad;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.status-dropdown {
+    background: #474e68;
+    box-shadow: 0px 0px 10px #323749;
+    position: relative;
+    width: 170px;
+    top: 5px;
+    left: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    display: none;
+}
+
+/* ON OFF STATUS DROPDOWN */
+.active {
+    display: flex;
+}
+
+.status-list {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    width: 150px;
+    border-radius: 4px;
+}
+.status-list {
+    background: #2b2f3e;
+    
+}
+
+#status-list-1{
+    color: yellow;
+}
+#status-list-2 {
+    color: red;
+}
+#status-list-3 {
+    color: rgb(1, 195, 1);
+}
+
+/* transtion */
+
+.person-icon:hover, .dead-line-now:hover,
+.date-calender:hover, .status-now:hover,
+.chat-icon:hover, .new-task:hover,
+.task-form button:hover {
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background: #8F51D1;
+   
+}
+
+.person-icon:hover ,.date-calender:hover,
+.status-now:hover{
+    background: #8F51D1;
+    transition: 0.2s;
+}
+
+
+

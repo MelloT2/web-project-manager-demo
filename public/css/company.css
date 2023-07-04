@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+:root{
+  --background: #ff0000;
+  --square-color: #631873;
+  --font-color: #D64E9A;
+  --boardder-color: #E1C0EB;
+  --font02-color: #A36AA9;
+  --font03-color:  #D4A6D4;
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+  }
+  
+  .square-box {
+      width: 42%;
+      height: 550px;
+      background-color: var(--square-color);
+      position: absolute;
+      border-radius: 0px 0px 260px 0px ;
+      top: 0;
+      left: 0;
+  }
+  .square-box img {
+    display: block;
+    object-fit: contain;
+    height: 420px;
+    width: auto;
+    padding:  10px 0px 20px 20px;
+    /* border: 2px solid #110d0d; */
+    margin-top: 70px;
+    margin-left: 30px;
+  }
+
+  /* detail box */
+  .company-box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1.5px solid var(--boardder-color);
+    border-radius: 30px;
+    margin-top: 4%;
+    margin-right: 10%;
+    z-index: 10;
+    height: 350px;
+    width: 40%;
+  }
+  .company-box .header-company h3{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Itim', cursive;
+    color: var(--font02-color);
+  }
+  .company-box .header-company p {
+    padding-left: 16.5%;
+    color: var(--font03-color);
+  }
+  .header-company{
+    padding-bottom: 10px;
+  }
+  .input-company {
+    position: relative;
+    align-items: center;
+    top: 2%;
+    margin-left: 16%;
+    
+  }
+  .project-name{
+    position: absolute;
+    top: 0.5%;
+    margin-left: 20px;
+    font-family: 'Itim', cursive;
+    color: var(--boardder-color);
+  }
+
+
+  .input_text_company{
+    margin-top: 10px;
+    width: 320px;
+    height: 30px;
+    border-radius: 15px;
+    letter-spacing:1px;
+    border: solid 1.8px var(--font-color);
+    padding-left: 15px; /* Adjust the value as needed */
+    text-align: left; /* Aligns the text to the left */
+  }
+  .input_text_company::placeholder {
+    text-align: left;
+    padding-left: 0;
+    color: var(--font03-color);
+  }
+  .company-btn {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    transition: 1s;
+    margin-top: 50px;
+    border-radius: 25px;
+    border: none;
+    background: var(--font-color);
+    color: #f7e1dd;
+  }
+
+  /* intivation-form */
+  .header-intivation i{
+    position:absolute;
+    left: 0;
+  }
+  .header-intivation{
+    width: 20%;
+    position: fixed;
+    right: 29%;
+    bottom: 28%;
+  }
+  .header-intivation p{
+    color: var(--font03-color);
+    margin-left: 15px; 
+  }
+  .intivation-form{
+    position: fixed;
+    bottom: 27%; 
+    right: 28%;
+    
+  }
+  .input_text_ojectidcompany {
+    flex: 1;
+    border-radius: 18px;
+    letter-spacing: 1px;
+    border: solid 1.8px var(--boardder-color);
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 95px;
+    font-size: 28px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust the line height as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+   
+  }
+.intivation-code {
+  display: flex;
+  position: fixed;
+}
+
+.input_with_button {
+  position: relative;
+  right: 55%;
+}
+.input_text_ojectidcompany::placeholder{
+  color: var(--font03-color);
+}
+
+.intivation-btn  {
+  position: absolute;
+  left: 0;
+  border: solid 1.8px var(--font-color);
+  border-radius: 12px;
+  margin: 6px 8px 7px 7px;
+  height: 34px; /* Adjust the value as needed */
+  width: 80px; 
+   background: var(--font-color);
+  color: #f7e1dd;
+}
+/* circle-box */
+.circle-box{
+      width: 18%;
+      height: 200px;
+      background-color: var(--square-color);
+      position: fixed;
+      border-radius: 500px 11px 0px 0px ;
+      bottom: 0;
+      right: 0;
+      z-index: -10;
+      background-color: #F5A513;
+}
+
+
+
+
+
+  
